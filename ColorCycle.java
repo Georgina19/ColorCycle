@@ -12,11 +12,11 @@ public class ColorCycle extends JFrame implements ActionListener {
 	public ColorCycle(String title) {
 		super(title);
 		
-		// Creo el botó i li poso un text
+		// Creo el botï¿½ i li poso un text
 		Button = new JButton("Click me");
 		Button.addActionListener(this);
 		
-		// Afegeixo el botó al layout
+		// Afegeixo el botï¿½ al layout
 		setLayout(new FlowLayout());
 		add(Button);
 	}
@@ -26,7 +26,7 @@ public class ColorCycle extends JFrame implements ActionListener {
 		// Variable que equival a: getContentPane().getBackground()
 		Color getColor = getContentPane().getBackground();
 		
-		// Miro quin color toca quan l'usuari cliqui al botó
+		// Miro quin color toca quan l'usuari cliqui al botï¿½
 		if (getColor.equals(Color.red)) {
 			getContentPane().setBackground(Color.green);
 		} else if (getColor.equals(Color.green)) {
@@ -44,7 +44,7 @@ public class ColorCycle extends JFrame implements ActionListener {
 	// Main
 	public static void main(String[] args) {
 		ColorCycle demo = new ColorCycle("Click a Button");
-		demo.setSize(400, 150);
+		demo.setSize(500, 200);
 		demo.setVisible(true);
 	}
 }
